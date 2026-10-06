@@ -93,7 +93,8 @@ a {
     letter-spacing: 0.05em;
 }
 
-.motto {
+/* девиз */
+.motto { 
     margin-bottom: 0;
     padding-bottom: 0.3em;
     border-bottom: 3px double var(--ink);
