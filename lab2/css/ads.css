@@ -1,0 +1,107 @@
+.ads-page {
+    margin-top: 1.5em;
+}
+
+/* Заголовок раздела занимает всю ширину сетки */
+.section-title {
+    grid-column: 1 / -1;
+    margin: 1em 0 0.6em;
+    border-bottom: 3px double var(--ink);
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Разыскиваются */
+
+.wanted {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+}
+
+.wanted-poster {
+    padding: 1em;
+    border: 2px solid var(--ink);
+    background-color: #d9bf86;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+/* Плакаты висят слегка вкривь, как прибитые к доске */
+.wanted-poster:nth-of-type(odd) {
+    transform: rotate(-1.5deg);
+}
+
+.wanted-poster:nth-of-type(even) {
+    transform: rotate(1.5deg);
+}
+
+.wanted-poster::before {
+    content: "Разыскивается";
+    display: block;
+    margin-bottom: 0.5em;
+    border-bottom: 3px double var(--ink);
+    color: var(--accent);
+    font-family: var(--font-title);
+    font-size: 1.6em;
+    letter-spacing: 0.05em;
+}
+
+.wanted-portrait {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    margin-bottom: 0.5em;
+    border: 1px solid var(--ink);
+    background-color: rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    filter: sepia(0.8) contrast(1.1);
+}
+
+.wanted-poster h3 {
+    margin-bottom: 0.3em;
+    font-size: 1.5em;
+}
+
+.crime {
+    font-size: 0.95em;
+}
+
+.reward {
+    margin-bottom: 0;
+    color: var(--accent);
+    font-size: 1.2em;
+}
+
+/* Частные объявления */
+
+.classifieds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em 1.5em;
+}
+
+.ad-card {
+    padding: 0.75em 1em;
+    border: 1px solid var(--ink);
+    background-color: rgba(255, 240, 200, 0.25);
+}
+
+.ad-card h3 {
+    margin-bottom: 0.3em;
+    border-bottom: 1px dotted var(--ink-light);
+    color: var(--accent);
+    font-size: 1.3em;
+}
+
+.contact {
+    margin-bottom: 0;
+    color: var(--ink-light);
+    font-size: 0.9em;
+}
+
+.contact span {
+    color: var(--ink);
+    font-weight: bold;
+}
+
