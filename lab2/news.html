@@ -8,16 +8,16 @@
     </head>
     <body>
         <header id="masthead">
-            <div>
+            <div class="issue-line">
                 <span>Выпуск № [N]</span>
                 <span>[Дата]</span>
-                <span>Цена: [N] <img src="img/Gold.webp" alt="золото">, [N] <img src="img/Silver.webp" alt="серебро">, [N] <img src="img/Copper.webp" alt="медяк"></span>
+                <span>Цена: [N] <img src="img/Gold.webp" alt="золото" class="coin">, [N] <img src="img/Silver.webp" alt="серебро" class="coin">, [N] <img src="img/Copper.webp" alt="медяк" class="coin"></span>
             </div>
             <h1>Вестник Азерота</h1>
-            <p>[Девиз газеты]</p>
+            <p class="motto">[Девиз газеты]</p>
         </header>
 
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Первая полоса</a></li>
                 <li><a href="news.html" class="active">Новости королевств</a></li>
@@ -26,8 +26,8 @@
             </ul>
         </nav>
 
-        <main>
-            <section>
+        <main class="news-page">
+            <section class="toc">
                 <h2>В этом выпуске</h2>
                 <ol>
                     <li><a href="#article-1">[Заголовок статьи 1]</a></li>
@@ -37,40 +37,40 @@
                 </ol>
             </section>
 
-            <article id="article-1">
-                <p>[Рубрика]</p>
+            <article id="article-1" class="news-article">
+                <p class="rubric">[Рубрика]</p>
                 <h2>[Заголовок статьи 1]</h2>
-                <img src="img/article-1.jpg" alt="[Описание картинки]">
-                <p>[Текст статьи] <strong>[Важное]</strong> [Текст статьи]</p>
+                <img src="img/article-1.jpg" alt="[Описание картинки]" class="article-img">
+                <p class="drop-cap">[Текст статьи] <strong>[Важное]</strong> [Текст статьи]</p>
                 <p>[Текст статьи]</p>
             </article>
 
-            <article id="article-2">
-                <p>[Рубрика]</p>
+            <article id="article-2" class="news-article">
+                <p class="rubric">[Рубрика]</p>
                 <h2>[Заголовок статьи 2]</h2>
-                <p>[Текст статьи]</p>
-                <blockquote>
+                <p class="drop-cap">[Текст статьи]</p>
+                <blockquote class="quote">
                     <p>[Слова очевидца]</p>
                     <cite>[Имя очевидца]</cite>
                 </blockquote>
                 <p>[Текст статьи]</p>
             </article>
 
-            <article id="article-3">
-                <p>[Рубрика]</p>
+            <article id="article-3" class="news-article">
+                <p class="rubric">[Рубрика]</p>
                 <h2>[Заголовок статьи 3]</h2>
-                <img src="img/article-3.jpg" alt="[Описание картинки]">
-                <p>[Текст статьи] <em>[Акцент]</em> [Текст статьи]</p>
+                <img src="img/article-3.jpg" alt="[Описание картинки]" class="article-img">
+                <p class="drop-cap">[Текст статьи] <em>[Акцент]</em> [Текст статьи]</p>
             </article>
 
-            <article id="article-4">
-                <p>[Рубрика]</p>
+            <article id="article-4" class="news-article">
+                <p class="rubric">[Рубрика]</p>
                 <h2>[Заголовок статьи 4]</h2>
-                <p>[Текст статьи]</p>
+                <p class="drop-cap">[Текст статьи]</p>
                 <p>[Текст статьи]</p>
             </article>
 
-            <a href="#masthead">Наверх</a>
+            <a href="#masthead" class="to-top">Наверх</a>
         </main>
     </body>
 </html>
