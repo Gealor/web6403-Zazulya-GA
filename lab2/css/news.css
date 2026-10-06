@@ -1,0 +1,97 @@
+.news-page {
+    margin-top: 1.5em;
+}
+
+/* Оглавление выпуска */
+.toc {
+    margin-bottom: 2em;
+    padding: 0.75em 1.5em;
+    border: 3px double var(--ink);
+}
+
+.toc h2 {
+    margin-bottom: 0.3em;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.toc ol {
+    padding-left: 1.5em;
+    list-style-type: upper-roman; /* I, II, III, IV — по-газетному */
+}
+
+.toc a {
+    color: var(--ink);
+    text-decoration: none;
+}
+
+.toc a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* Статья: текст в две колонки, шапка статьи — на всю ширину */
+.news-article {
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 3px double var(--ink);
+    column-count: 2;
+    column-gap: 2em;
+    column-rule: 1px solid var(--ink-light);
+}
+
+.news-article h2,
+.news-article .rubric,
+.news-article .article-img {
+    column-span: all;
+}
+
+.news-article h2 {
+    margin-bottom: 0.4em;
+    font-size: 2em;
+}
+
+.news-article .drop-cap {
+    display: flow-root;
+    break-inside: avoid;
+}
+
+/* Рубрика над заголовком */
+.rubric {
+    margin-bottom: 0.2em;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+}
+
+/* Цитата */
+.quote {
+    margin: 0.5em 0 1em;
+    padding: 0.5em 1em;
+    border-left: 4px solid var(--accent);
+    break-inside: avoid; /* не разрывать цитату между колонками */
+}
+
+.quote p {
+    margin-bottom: 0.3em;
+    font-size: 1.1em;
+}
+
+.quote cite {
+    display: block;
+    color: var(--ink-light);
+    font-style: normal;
+    text-align: right;
+}
+
+.quote cite::before {
+    content: "— ";
+}
+
+/* Ссылка Наверх */
+.to-top {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
