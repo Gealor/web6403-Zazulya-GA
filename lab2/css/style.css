@@ -1,0 +1,64 @@
+@import url('fonts.css');
+
+:root {
+    /* Бумага и рамка */
+    --paper: #c8a96e;
+    --frame: #1e1914;
+
+    /* Текст */
+    --ink: #140b03;
+    --ink-light: #3d2a14;
+
+    /* Акценты */
+    --accent: #5e1208;
+    --gold: #6e5208;
+
+    /* Изменение цен */
+    --price-up: #1d4d1d;
+    --price-down: #6e0f0f;
+    --price-same: #3d3020;
+
+    /* Шрифты */
+    --font-title: 'Morpheus', serif;
+    --font-text: 'Cormorant SC', serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    padding: 6vh 11vw;
+
+    background-color: var(--frame);
+    background-image: url('../img/background.webp');
+    background-size: 100% 100%;
+    background-attachment: scroll;
+
+    color: var(--ink);
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 0.75em;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--accent);
+}
