@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Morpheus';
+    src: url('../fonts/ofont.ru_Morpheus.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant SC';
+    src: url('../fonts/CormorantSC-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant SC';
+    src: url('../fonts/CormorantSC-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cormorant SC';
+    src: url('../fonts/CormorantSC-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
