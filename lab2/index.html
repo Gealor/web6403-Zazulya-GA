@@ -4,20 +4,24 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Вестник Азерота - Первая полоса</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/global.css">
     </head>
     <body>
         <header id="masthead">
-            <div>
+            <div class="issue-line">
                 <span>Выпуск № [N]</span>
                 <span>[Дата]</span>
-                <span>Цена: [N] <img src="img/Gold.webp" alt="золото">, [N] <img src="img/Silver.webp" alt="серебро">, [N] <img src="img/Copper.webp" alt="медяк"></span>
+                <span>
+                    Цена: [N] <img src="img/Gold.webp" alt="золото" class="coin">, 
+                    [N] <img src="img/Silver.webp" alt="серебро" class="coin">, 
+                    [N] <img src="img/Copper.webp" alt="медяк" class="coin">
+                </span>
             </div>
             <h1>Вестник Азерота</h1>
-            <p>[Девиз газеты]</p>
+            <p class="motto">[Девиз газеты]</p>
         </header>
 
-        <nav>
+        <nav class="main-nav">
             <ul>
                 <li><a href="index.html" class="active">Первая полоса</a></li>
                 <li><a href="news.html">Новости королевств</a></li>
@@ -26,28 +30,28 @@
             </ul>
         </nav>
 
-        <main>
-            <article>
+        <main class="front-page">
+            <article class="lead-article">
                 <h2>[Заголовок статьи]</h2>
-                <p>[Подзаголовок]</p>
-                <img src="img/lead.jpg" alt="[Описание картинки]">
-                <p>Автор: <span>[Автор]</span></p>
-                <p>[Текст статьи] <strong>[Важное]</strong> [Текст статьи]</p>
+                <p class="subtitle">[Подзаголовок]</p>
+                <img src="img/lead.jpg" alt="[Описание картинки]" class="article-img">
+                <p class="byline">Автор: <span>[Автор]</span></p>
+                <p class="drop-cap">[Текст статьи] <strong>[Важное]</strong> [Текст статьи]</p>
                 <p>[Текст статьи] <em>[Акцент]</em> [Текст статьи]</p>
-                <a href="news.html#article-1">Читать полностью</a>
+                <a href="news.html#article-1" class="read-more">Читать полностью</a>
             </article>
 
-            <aside>
+            <aside class="briefs">
                 <h2>Коротко</h2>
-                <section>
+                <section class="brief">
                     <h3>[Заголовок заметки]</h3>
                     <p>[Текст заметки]</p>
                 </section>
-                <section>
+                <section class="brief">
                     <h3>[Заголовок заметки]</h3>
                     <p>[Текст заметки]</p>
                 </section>
-                <section>
+                <section class="brief">
                     <h3>[Заголовок заметки]</h3>
                     <p>[Текст заметки]</p>
                 </section>
