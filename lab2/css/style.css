@@ -31,10 +31,10 @@
 
 body {
     min-height: 100vh;
-    padding: 6vh 11vw;
+    padding: 4vh 11vw;
 
     background-color: var(--frame);
-    background-image: url('../img/background.webp');
+    background-image: url('../img/background.jpg');
     background-size: 100% 100%;
     background-attachment: scroll;
 
