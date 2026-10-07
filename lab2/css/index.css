@@ -18,7 +18,7 @@
     display: block;
     width: 100%;
     margin: 0.5em 0;
-    border: 1px solid var(--ink);
+    border: 2px solid var(--ink);
     filter: sepia(0.6);
 }
 
