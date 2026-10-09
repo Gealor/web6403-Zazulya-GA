@@ -1,0 +1,69 @@
+.front-page {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* распределение колонок: 3 части для основной статьи, 1 часть для кратких сводок */
+    gap: 2em;
+    margin-top: 1.5em;
+}
+
+.lead-article h2 {
+    font-size: 2.4em;
+}
+
+.subtitle {
+    color: var(--ink-light);
+    font-size: 1.15em;
+}
+
+.article-img {
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+    border: 2px solid var(--ink);
+    filter: sepia(0.6);
+}
+
+.byline {
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid var(--ink-light);
+    color: var(--ink-light);
+    font-size: 0.9em;
+}
+
+.drop-cap::first-letter {
+    float: left;
+    margin: 0.05em 0.1em 0 0;
+    color: var(--accent);
+    font-family: var(--font-title);
+    font-size: 3.2em;
+    line-height: 0.8;
+}
+
+.read-more {
+    font-weight: bold;
+}
+
+.briefs {
+    padding-left: 1.5em;
+    border-left: 1px solid var(--ink);
+}
+
+.briefs h2 {
+    margin-bottom: 0.5em;
+    border-bottom: 3px double var(--ink);
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.brief {
+    margin-bottom: 0.75em;
+    border-bottom: 1px dotted var(--ink-light);
+}
+
+.brief:last-child {
+    border-bottom: none;
+}
+
+.brief h3 {
+    margin-bottom: 0.25em;
+    font-size: 1.1em;
+}

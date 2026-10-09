@@ -1,0 +1,105 @@
+.market-page {
+    margin-top: 1.5em;
+}
+
+/* Обзор рынка: картинка слева, текст обтекает её */
+.market-review h2 {
+    margin-bottom: 0.4em;
+    font-size: 2.4em;
+}
+
+/* Таблица цен */
+.price-table {
+    width: 100%;
+    margin: 2em 0 1em;
+    border: 3px double var(--ink);
+    border-collapse: collapse;
+}
+
+.price-table caption {
+    margin-bottom: 0.3em;
+    font-family: var(--font-title);
+    font-size: 1.6em;
+}
+
+.price-table th {
+    padding: 0.4em 0.8em;
+    border-bottom: 2px solid var(--ink);
+    font-family: var(--font-title);
+    font-weight: normal;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.price-table td {
+    padding: 0.4em 0.8em;
+    border-bottom: 1px dotted var(--ink-light);
+}
+
+.price-table td p {
+    margin-bottom: 0;
+}
+
+/* Полосатые строки */
+.price-table tbody tr:nth-child(even) {
+    background-color: rgba(60, 40, 15, 0.12);
+}
+
+.price-table tbody tr:hover {
+    background-color: rgba(94, 18, 8, 0.15);
+}
+
+/* Выравнивание столбцов */
+.col-item {
+    text-align: left;
+}
+
+.col-change {
+    text-align: center;
+}
+
+.col-price {
+    text-align: right;
+    white-space: nowrap; /* цена не переносится на две строки */
+}
+
+/* Иконка товара в рамке, как у предметов WoW */
+.item-icon {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0.2em 0.7em 0.2em 0.2em;
+    border: 2px solid #9a9a9a;   /* стальной ободок */
+    border-radius: 5px;
+    background-color: #000;
+    box-shadow:
+        0 0 0 2px #0b0b0b, /* <смещение-x> <смещение-y> <радиус-размытия> <радиус-растяжения> чёрная внешняя кайма */
+        0 0 6px 2px rgba(0, 0, 0, 0.6); /* тень вокруг */
+    vertical-align: middle;
+}
+
+/* Изменение цены */
+.up,
+.down,
+.same {
+    font-weight: bold;
+}
+
+.up {
+    color: var(--price-up);
+}
+
+.down {
+    color: var(--price-down);
+}
+
+.same {
+    color: var(--price-same);
+}
+
+/* Примечание под таблицей */
+.price-table tfoot td {
+    padding-top: 0.6em;
+    color: var(--ink-light);
+    font-size: 0.85em;
+    text-align: center;
+}

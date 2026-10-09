@@ -1,0 +1,147 @@
+@import url('fonts.css');
+@import url('index.css');
+@import url('news.css');
+@import url('market.css');
+@import url('ads.css');
+
+:root {
+    /* Бумага и рамка */
+    --paper: #c8a96e;
+    --frame: #1e1914;
+
+    /* Текст */
+    --ink: #140b03;
+    --ink-light: #3d2a14;
+
+    /* Акценты */
+    --accent: #5e1208;
+    --gold: #6e5208;
+
+    /* Изменение цен */
+    --price-up: #1d4d1d;
+    --price-down: #6e0f0f;
+    --price-same: #3d3020;
+
+    /* Шрифты */
+    --font-title: 'Morpheus', serif;
+    --font-text: 'Cormorant SC', serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Тёмное дерево вокруг листа */
+html {
+    background-color: var(--frame);
+}
+
+/* Лист пергамента: картинка режется на 9 частей через border-image.
+   Углы с золотыми уголками не растягиваются, края и середина повторяются */
+body {
+    max-width: 1500px;
+    min-height: calc(100vh - 2em);
+    margin: 1em auto;
+    padding: 1em 1.5em; /* отступ текста от рваного края */
+
+    border-style: solid;
+    border-width: 50px 195px 50px 190px; /* верх право низ лево, px исходника */
+    border-image-source: url('../img/background.jpg');
+    border-image-slice: 170 650 170 640 fill; /* верх право низ лево, px исходника */
+    border-image-repeat: round;
+
+    color: var(--ink);
+    font-family: var(--font-text);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+p {
+    margin-bottom: 0.75em; /* parent*0.75 */
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: var(--accent);
+}
+
+/* Шапка */
+#masthead {
+    text-align: center;
+}
+
+.issue-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding: 0.2em 0.5em;
+    border-top: 3px double var(--ink);
+    border-bottom: 3px double var(--ink);
+    font-size: 0.9em;
+}
+
+.coin {
+    height: 1em;
+    width: auto;
+    vertical-align: -0.1em;
+}
+
+#masthead h1 {
+    margin-top: 0.15em;
+    font-size: 4em;
+    letter-spacing: 0.05em;
+}
+
+/* девиз */
+.motto { 
+    margin-bottom: 0;
+    padding-bottom: 0.3em;
+    border-bottom: 3px double var(--ink);
+    color: var(--ink-light);
+}
+
+
+/* Навигация */
+
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5em 2em;
+    padding: 0.4em 0;
+    border-bottom: 1px solid var(--ink);
+    list-style: none;
+}
+
+.main-nav a {
+    color: var(--ink);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: var(--accent);
+}
+
+.main-nav a.active {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+
+
+
